@@ -1,0 +1,12 @@
+fragment getCurrentUserUser on User {
+  id
+  firstName
+  lastName
+  email
+}
+
+query GetCurrentUser {
+  whoAmI {
+    ...getCurrentUserUser
+  }
+}
